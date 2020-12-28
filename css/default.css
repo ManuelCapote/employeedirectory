@@ -1,0 +1,193 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Varela Round', sans-serif;
+	background: #2E3047;
+	color: #3BBA9C;
+}
+
+body {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+
+.header {
+	width: 100%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid #3BBA9C;
+	border-radius: 10px; 
+}
+
+.searchBar {
+	width: 100%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 10px; 
+}
+
+.overlayDiv {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modalCard {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;	
+	background: #2E3047;
+	color: #707793;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 10px;
+	width: 420px;
+	height: 500px;
+	z-index: 2;
+	border: 3px solid orange;
+
+}
+
+.hide {
+	display: none;
+}
+
+.modalCard > div {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	
+}
+
+.modalCard #name {
+	color: #3BBA9C;
+}
+
+.modalCard p {
+	color: #707793;
+	padding: 0.2em;
+}
+
+.modalCard hr {
+	border: 1px solid #3BBA9C; 
+}
+
+.modalCard img {
+	border-radius: 50%;
+}
+
+.modalCard #divider {
+	width: 100%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.action {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.back:hover {
+	font-size: large; 
+	cursor: pointer;
+}
+
+.next:hover {
+	font-size: large; 
+	cursor: pointer;
+}
+
+
+.empInfoBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-radius: 10px;
+	padding: 0.3em;
+}
+
+.empImgBox {
+	display: flex;
+	width: 35%;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.empImgBox img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.empText {
+	flex-direction: column;
+	align-items: left;
+	width: 65%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-direction: column;
+
+}
+
+.name {
+	display: flex;
+	height: 45%;
+	align-items: flex-end;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+	
+}
+
+.email {
+	display: flex;
+	align-items: flex-end;
+	height: 10%;
+	text-overflow: ellipsis ;
+	color: #707793;
+} 
+
+.city {
+	display: flex;
+	height: 45%;
+	align-items: flex-start;
+	color: #707793;
+}
+
+.searchBar input {
+	border: 1px solid #3BBA9C;
+	border-radius: 10px; 
+	height: 30px;
+	width: 35%;
+	padding-left: 0.5em;
+	margin-top: 0.5em;
+}

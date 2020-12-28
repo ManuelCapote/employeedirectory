@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    padding: 1em;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"        
+        "main"
+        "searchBar";
+}
+
+.searchBar {
+    display: grid;
+    grid-area: searchBar;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    border: solid 1px black;
+    height: 40px;
+    width: 100%;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.main > div {
+    border: 1px solid #3BBA9C;
+    min-height: 150px;
+
+    grid-template-rows: repeat(auto-fit, minmax(440px, 1fr));
+}
+
+.empInfoBox:hover {
+    border: 3px solid orange;
+
+}
+
+@media (min-width: 768px) {
+    .main {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .main {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
